@@ -1,0 +1,45 @@
+
+.quotebox{
+  height:auto;
+  width:500px;
+  border:1px rgb(145, 126, 126) solid;
+  border-radius: 10px;
+  text-align:right;
+   }
+  
+
+
+.text{
+  margin:20px;
+  text-align:left;
+  opacity:1;
+  
+  }
+
+ 
+ .author{
+  margin:20px;
+  
+  font-style: italic;
+  opacity:0.8;
+}
+.newquote{
+  margin:20px;
+  position: relative;
+  border-radius: 5px;
+  height:35px;
+  width:100px;
+  
+  font-weight: 700;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+  opacity:0.8;
+ 
+}
+footer{
+  text-align: center;
+  color:white;
+  margin:10px;
+  font-style:italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
