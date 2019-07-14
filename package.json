@@ -5,6 +5,7 @@
   "dependencies": {
     "css-transition": "0.0.3",
     "jquery": "^3.4.1",
+    "lodash.template": "^4.5.0",
     "react": "^16.8.6",
     "react-css-transition": "^0.7.4",
     "react-dom": "^16.8.6",
