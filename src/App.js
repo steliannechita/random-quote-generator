@@ -10,8 +10,14 @@ let quotes =[{
   quote:'Those who dare to fail miserably can achieve greatly.',
   author:'John F. Kennedy'},{
   quote:'It is hard to fail, but it is worse never to have tried to succeed.',
-  author:'Theodore Roosevelt'
-  }]
+  author:'Theodore Roosevelt'},{
+  quote:'I have no special talent. I am only passionately curious.',
+  author:'Albert Einstein'},{
+  quote:'If you judge people, you have no time to love them.',
+  author:'Mother Teresa'},{
+  quote:'Wisely, and slow. They stumble that run fast.',
+  author:'William Shakespeare '   
+    }]
 
 class App extends React.Component {
 
@@ -22,18 +28,15 @@ class App extends React.Component {
       author:quotes[0].author};
 
   }
-  randomNum(){
-    
+  randomQuote(){
     let randomNumber=Math.floor(Math.random()*quotes.length)
     return quotes[randomNumber]
   }
   
   handleClick=()=>{
-    let randomQuote=this.randomNum();
-    this.setState({quote:randomQuote.quote,
-      author:randomQuote.author});
-      
-    
+    let generateRandomQuote=this.randomQuote();
+    this.setState({quote:generateRandomQuote.quote,
+    author:generateRandomQuote.author});
   }
   
   randomColor(){
@@ -61,9 +64,9 @@ class App extends React.Component {
           </h5>
 
           <button style={{backgroundColor:displayColor}}
-                    className='newquote'
-                    onClick={this.handleClick}
-                    >New quote
+                  className='newquote'
+                  onClick={this.handleClick}
+                  >New quote
           </button>
       </div> 
       <footer >Created by SN@2019</footer>  
