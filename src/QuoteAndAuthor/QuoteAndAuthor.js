@@ -4,8 +4,8 @@ import "./QuoteAndAuthor.css";
 class QuoteAndAuthor extends React.Component {
   render() {
     const randomColor = this.props.displayColor();
-    const body = document.documentElement;
-    body.style.backgroundColor = randomColor;
+    const html = document.documentElement;
+    html.style.backgroundColor = randomColor;
 
     return (
       <div style={{ backgroundColor: "white" }} className="quotebox">
