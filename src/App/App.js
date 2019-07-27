@@ -1,5 +1,5 @@
 import React from 'react';
-
+import QuoteAndAuthor from '../QuoteAndAuthor/QuoteAndAuthor'
 import './App.css';
 
 let quotes =[{
@@ -25,7 +25,8 @@ class App extends React.Component {
     super();
     this.state={
       quote:quotes[0].quote,
-      author:quotes[0].author};
+      author:quotes[0].author,
+      className:''};
 
   }
   randomQuote(){
@@ -36,7 +37,9 @@ class App extends React.Component {
   handleClick=()=>{
     let generateRandomQuote=this.randomQuote();
     this.setState({quote:generateRandomQuote.quote,
-    author:generateRandomQuote.author});
+    author:generateRandomQuote.author,className:'fadeIn'});
+    setTimeout(()=>this.setState({className:''}),800)
+    
   }
   
   randomColor(){
@@ -46,31 +49,15 @@ class App extends React.Component {
       ${Math.floor(Math.random()*155)})`
     return color
   }
+  
   render(){
-    let displayColor=this.randomColor()
-    let root=document.getElementById('root');
-    root.style.backgroundColor=displayColor;
-   
     return (
-    <div>
-      <div style={{backgroundColor:'white'}} className='quotebox' >
-          
-            <h1 style={{color:displayColor}} 
-              className='text' >"{this.state.quote}"
-            </h1>
-          
-          <h5 style={{color:displayColor}} 
-              className='author'>-{this.state.author}-
-          </h5>
-
-          <button style={{backgroundColor:displayColor}}
-                  className='newquote'
-                  onClick={this.handleClick}
-                  >New quote
-          </button>
-      </div> 
-      <footer >Created by SN@2019</footer>  
-    </div> 
+      <div>
+          <QuoteAndAuthor displayColor={this.randomColor}
+                          handleClick={this.handleClick}
+                          {...this.state}/>
+          <footer >Created by SN@2019</footer>  
+        </div>   
    )
   }
 }

@@ -5,15 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  
-  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 #root{
   height:600px;
   margin:0;
@@ -21,6 +19,6 @@ code {
   align-items: center;
   justify-content: center;
   padding-top:0 ;
-  transition: 2000ms
+  transition:1000
   
 }
