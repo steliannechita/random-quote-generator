@@ -2,7 +2,7 @@ import React from "react";
 import QuoteAndAuthor from "../QuoteAndAuthor/QuoteAndAuthor";
 import "./App.css";
 
-let quotes = [
+const quotes = [
   {
     quote: "Life is what happens when you're busy making other plans.",
     author: "John Lenon"
