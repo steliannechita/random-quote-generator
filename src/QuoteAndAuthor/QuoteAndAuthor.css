@@ -1,42 +1,45 @@
+.quotebox {
+  height: auto;
+  width: 500px;
+  border: 1px rgb(145, 126, 126) solid;
+  border-radius: 10px;
+  text-align: right;
+}
 
-.quotebox{
-    height:auto;
-    width:500px;
-    border:1px rgb(145, 126, 126) solid;
-    border-radius: 10px;
-    text-align:right;
-    
-    
-     }
-#quote{
-    margin: 20px;
-    text-align: left;
+#quote {
+  margin: 20px;
+  text-align: left;
+}
 
-}     
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
 
-.fadeIn{
-    opacity:0;
-    display:block;
-    animation: slidein 1s ease-out forwards;
-    }
-@keyframes slidein{
-    0%{ opacity:0; transform:translateY(-25px); }
-    100%{ opacity:1; transform:translateY(0px); }
-      }
-    
-#author{
-    margin:20px;
-    font-style: italic;
-    }
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
-#newquote{
-    margin:20px;
-    position: relative;
-    border-radius: 5px;
-    height:35px;
-    width:100px;
-    font-weight: 700;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:white;
-    transition: 1000
-    }
+#author {
+  margin: 20px;
+  font-style: italic;
+}
+
+#newquote {
+  margin: 20px;
+  position: relative;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  font-weight: 700;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  color: white;
+}
