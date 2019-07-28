@@ -1,39 +1,9 @@
 import React from "react";
 import QuoteAndAuthor from "../QuoteAndAuthor/QuoteAndAuthor";
 import "./App.css";
+import quotes from '../QuoteAndAuthor/QuotesDatabase'
 
-const quotes = [
-  {
-    quote: "Life is what happens when you're busy making other plans.",
-    author: "John Lenon"
-  },
-  {
-    quote:
-      "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.",
-    author: "Mark Twain"
-  },
-  {
-    quote: "Those who dare to fail miserably can achieve greatly.",
-    author: "John F. Kennedy"
-  },
-  {
-    quote:
-      "It is hard to fail, but it is worse never to have tried to succeed.",
-    author: "Theodore Roosevelt"
-  },
-  {
-    quote: "I have no special talent. I am only passionately curious.",
-    author: "Albert Einstein"
-  },
-  {
-    quote: "If you judge people, you have no time to love them.",
-    author: "Mother Teresa"
-  },
-  {
-    quote: "Wisely, and slow. They stumble that run fast.",
-    author: "William Shakespeare "
-  }
-];
+
 
 class App extends React.Component {
   constructor() {
@@ -46,6 +16,10 @@ class App extends React.Component {
   randomQuote() {
     const randomNumber = Math.floor(Math.random() * quotes.length);
     return quotes[randomNumber];
+    
+  }
+  shuffleQuotes(array){
+    return array.sort(()=>Math.random()-0.5)
   }
 
   handleClick = () => {
@@ -54,6 +28,7 @@ class App extends React.Component {
       quote: generateRandomQuote.quote,
       author: generateRandomQuote.author
     });
+    this.shuffleQuotes(quotes)
   };
 
   randomColor() {
@@ -63,7 +38,7 @@ class App extends React.Component {
       ${Math.floor(Math.random() * 155)})`;
     return color;
   }
-
+  
   render() {
     return (
       <div>

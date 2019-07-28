@@ -18,11 +18,9 @@ class QuoteAndAuthor extends React.Component {
           key={Math.random()}
           style={{ color: randomColor }}
         >
-          <h1 id="quote">
-            "{this.props.quote}"
-          </h1>
+          <h1 id="quote">"{this.props.quote}"</h1>
           <h5 id="author">
-            -{this.props.author}-
+            -{this.props.author ? this.props.author : "Unknown"}-
           </h5>
         </div>
         <button

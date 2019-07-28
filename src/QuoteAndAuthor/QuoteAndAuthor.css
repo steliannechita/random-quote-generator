@@ -1,9 +1,11 @@
 .quotebox {
   height: auto;
-  width: 500px;
+  width: 100%;
   border: 1px rgb(145, 126, 126) solid;
   border-radius: 10px;
   text-align: right;
+  max-width: 35rem
+  
 }
 
 #quote {

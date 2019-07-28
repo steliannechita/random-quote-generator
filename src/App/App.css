@@ -5,6 +5,10 @@ body {
 html {
   transition: background-color 1s;
 }
+#root{
+  width:80%;
+  margin: 0 10%;
+}
 
 footer {
   text-align: center;
