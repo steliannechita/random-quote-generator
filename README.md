@@ -4,7 +4,7 @@
 Random Quote Generator is a web application where users can get their inspiring quote of the day. Quotes are rendered from local database which I have personally created, as all the API's providing quotes would have incured costs.
 
 ### Challenges
-The most challenging thing was to make the component  re-rendering when the button for new quote is  clicked , change it's color and add in the fade in effect , both at the same time. I've managed to do that by adding a 'key' attribute to it.
+The most challenging thing was to make the component changing it's color and add FadeIn effect, both at the same time. I've managed to do that by adding a 'key' attribute to it. which will make the component re-render every time user clicks on the 'New Quote' button.
 
 ```
  return (
