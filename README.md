@@ -1,5 +1,7 @@
 
- ## Random Quote Generator
+## Random Quote Generator
+ 
+https://steliannechita.github.io/random-quote-generator/
 
 Random Quote Generator is a web application where users can get their inspiring quote of the day. Quotes are rendered from local database which I have personally created, as all the API's providing quotes would have incured costs.
 
