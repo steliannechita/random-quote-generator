@@ -1,6 +1,5 @@
-# my project
 
-1. ## Random Quote Generator
+ ## Random Quote Generator
 
 Random Quote Generator is a web application where users can get their inspiring quote of the day. Quotes are rendered from local database which I have personally created, as all the API's providing quotes would have incured costs.
 
@@ -35,3 +34,14 @@ The most challenging thing was to make the component  re-rendering when the butt
 ```
 ### Future features
 - Introducing a sorting criteria/filter for the different types of quotes
+
+### Technologies used
+- React.JS 
+- JavaScript (ES6) 
+- Node.JS
+- CSS 
+- HTML5 
+- Git 
+- GitHub
+- GitHub Pages
+
